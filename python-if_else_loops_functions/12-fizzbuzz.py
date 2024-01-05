@@ -2,7 +2,7 @@
 def fizzbuzz():
     number = 100
     while number <= 100:
-        print("{number}")
+        print("{}".format(number))
         #if number % 5 == 0:
             #print("{Buzz}")
         #elif number % 3 == 0:
