@@ -3,10 +3,12 @@ def fizzbuzz():
     fizz = "Fizz"
     buzz = "Buzz"
     fizzbuzz = "FizzBuzz"
-    number = ""
-    if number % 5 == 0:
-        print("{}".format(buzz))
-    elif number % 3 == 0:
-        print("{}".format(fizz))
-    elif number % 5 == 0 and number % 3 == 0:
-        print("{}".format(fizzbuzz))
+    number = 100
+    while number < 100:
+        print(number)
+        if number % 5 == 0:
+            print("{Buzz}")
+        elif number % 3 == 0:
+            print("{Fizz}")
+        elif number % 5 == 0 and number % 3 == 0:
+            print("{FizzBuzz}")
