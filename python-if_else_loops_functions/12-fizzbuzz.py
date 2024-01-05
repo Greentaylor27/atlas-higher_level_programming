@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    number = 100
+    number = range(1,100)
     while number <= 100:
         print("{}".format(number))
         #if number % 5 == 0:
