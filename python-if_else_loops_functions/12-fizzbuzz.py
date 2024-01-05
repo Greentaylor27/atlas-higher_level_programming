@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    fizz = "Fizz"
-    buzz = "Buzz"
-    fizzbuzz = "FizzBuzz"
     number = 100
     while number < 100:
         print(number)
