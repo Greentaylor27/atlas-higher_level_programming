@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def fizzbuzz():
     number = 100
-    while number < 100:
-        print(number)
+    while number <= 100:
+        print("{number}")
         #if number % 5 == 0:
             #print("{Buzz}")
         #elif number % 3 == 0:
