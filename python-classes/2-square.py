@@ -4,7 +4,7 @@
 
 class Square:
     """Attributes of an object know as Square"""
-    def __init__(self, size):
+    def __init__(self, size=None):
         """Conditionals within the class"""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
