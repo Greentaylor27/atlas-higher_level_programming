@@ -11,9 +11,9 @@ class Square:
         """Conditionals within the class"""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        if size > 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
         
         """Method for finding the sqrt"""
         def area(self):
-            return size * size
+            return self.__size * self.__size
