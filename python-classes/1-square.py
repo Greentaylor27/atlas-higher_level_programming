@@ -3,7 +3,7 @@
 
 
 class Square:
+    """Attributes of an object known as Square"""
     def __init__(self, size):
-        """Attributes of an object called Square"""
         self.__size = size
     
