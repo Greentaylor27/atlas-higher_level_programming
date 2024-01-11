@@ -4,7 +4,7 @@
 
 class Square:
     """Attributes of an object know as Square"""
-    def __init__(self, size):
+    def __init__(self, size=0):
         """Initalizes Attributes"""
         self.__size = size
         """Conditionals within the class"""
