@@ -14,6 +14,6 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         
-        """Method for finding the sqrt"""
         def area(self, size):
+            """Method for finding the sqrt"""
             return self.__size * self.__size
