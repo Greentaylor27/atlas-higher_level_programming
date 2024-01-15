@@ -40,3 +40,6 @@ Converting float infinity to int
 Traceback (most recent call last):
     ...
 OverflowError: cannot convert float infinity to integer
+
+Passing in None to argument
+>>> add_integer(None, 5)
