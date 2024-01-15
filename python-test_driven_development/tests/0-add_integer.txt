@@ -9,7 +9,7 @@ Integer addition
 12
 
 >>> add_integer(-6, 4)
-2
+-2
 
 >>> add_integer(10.6, 5.2)
 15
@@ -24,7 +24,7 @@ TypeError: add_integer() missing 1 required positional argument: 'a'
 >>> add_integer(8, "World")
 Traceback (most recent call last):
     ...
-TypeError: b must be an int
+TypeError: b must be an Integer
 
 >>> add_integer("Hello", 5)
 Traceback (most recent call last):
