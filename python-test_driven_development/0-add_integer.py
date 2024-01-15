@@ -26,7 +26,7 @@ def add_integer(a, b=98):
     else:
         pass
     if isinstance(b, float):
-        a = int(b)
+        b = int(b)
     elif not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
     else:
