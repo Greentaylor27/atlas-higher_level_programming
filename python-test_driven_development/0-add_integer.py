@@ -21,7 +21,7 @@ def add_integer(a, b=98):
         int: Sum of two floats or ints
     """
     # Variable to be returned later
-    result = a + b
+    result = int(a) + int(b)
     # Conditionals for the function to make sure
     # all inputs are ints/float
     if not isinstance(a, (int, float)):
