@@ -4,7 +4,6 @@ Function that adds two integers or floats together and returns sum
 """
 
 def add_integer(a, b=98):
-    result = a + b
     """
     Adds two numbers together and returns the Sum.
     Both numbers must be integers or float
@@ -20,10 +19,16 @@ def add_integer(a, b=98):
     Returns:
         int: Sum of two floats or ints
     """
-    if not isinstance(a, (int, float)):
+    if isinstance(a, float):
+        a = int(a)
+    elif not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
-    if not isinstance(b, (int, float)):
+    else:
+        pass
+    if isinstance(b, float):
+        a = int(b)
+    elif not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
-    if result == float('inf'):
-        raise OverflowError("Float overflow occured")
-    return (result)
+    else:
+        pass
+    return (a + b)
