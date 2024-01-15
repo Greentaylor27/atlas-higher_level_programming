@@ -24,9 +24,9 @@ def add_integer(a, b=98):
     result = int(a) + int(b)
     # Conditionals for the function to make sure
     # all inputs are ints/float
-    if not isinstance(a, (int, float)):
+    if not isinstance(a, int):
         raise TypeError("a must be an integer")
-    if not isinstance(b, (int, float)):
+    if not isinstance(b, int):
         raise TypeError("b must be an integer")
     if result == float('inf'):
         raise OverflowError("Float overflow occured")
