@@ -3,8 +3,8 @@
 Function that adds two integers or floats together and returns sum
 """
 
+
 def add_integer(a, b=98):
-    
     """
     Adds two numbers together and returns the Sum.
     Both numbers must be integers or float
