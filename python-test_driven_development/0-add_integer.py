@@ -20,11 +20,15 @@ def add_integer(a, b=98):
     Returns:
         int: Sum of two floats or ints
     """
+    # Variable to be returned later
+    result = a + b
     # Conditionals for the function to make sure
     # all inputs are ints/float
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
     if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
+    if result == float('inf'):
+        raise OverflowError("Float overflow occured")
     # If the function passes then it should return the sum
-    return (int(a + b))
+    return (result)
