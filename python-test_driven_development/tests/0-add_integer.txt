@@ -12,7 +12,7 @@ Integer addition
 -2
 
 >>> add_integer(10.6, 5.2)
-15
+15.8
 
 Passing in a non-int as passable argument
 
@@ -37,6 +37,6 @@ TypeError: a must be an integer
 Converting float infinity to int
 
 >>> add_integer(1.8e+308, 1)
-Traceback(most recent call last):
+Traceback (most recent call last):
     ...
 OverflowError: cannot convert float infinity to integer
