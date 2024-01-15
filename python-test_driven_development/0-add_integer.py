@@ -1,3 +1,4 @@
+"""Function that adds two integers or floats together and returns sum"""
 #!/usr/bin/python3
 def add_integer(a, b=98):
     """Conditionals for the function to make sure all inputs are ints or floats"""
