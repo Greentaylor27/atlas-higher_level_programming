@@ -3,10 +3,12 @@
 Function that adds two integers or floats together and returns sum
 """
 def add_integer(a, b=98):
+    
+    
     """
     Adds two numbers together and returns the Sum.
     Both numbers must be integers or float
-    
+
     Args:
         a (int, float): first int/float to be used
         b (int, float): second int/float to be used
@@ -18,7 +20,7 @@ def add_integer(a, b=98):
     Returns:
         int: Sum of two floats or ints
     """
-    # Conditionals for the function to make sure 
+    # Conditionals for the function to make sure
     # all inputs are ints/float
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
