@@ -1,0 +1,37 @@
+>>>add_integer = __import__('0-add_integer').add_integer
+
+Integer addition
+
+add_integer(1, 2)
+3
+
+add_integer(7, 5)
+12
+
+add_integer(-6, 4)
+2
+
+add_integer(10.6, 5.2)
+16
+
+Passing in a non-int as passable argument
+
+add_integer()
+Traceback (most recent call last):
+    ...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+add_integer(8, "World")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an int
+
+add_integer("Hello", 5)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an int
+
+add_integer(None, 15)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an int
