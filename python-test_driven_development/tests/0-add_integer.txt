@@ -12,7 +12,7 @@ Integer addition
 -2
 
 >>> add_integer(10.6, 5.2)
-15.8
+15
 
 Passing in a non-int as passable argument
 
