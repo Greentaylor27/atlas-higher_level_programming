@@ -1,7 +1,7 @@
+#!/usr/bin/python3
 """
 Function that adds two integers or floats together and returns sum
 """
-#!/usr/bin/python3
 def add_integer(a, b=98):
     """
     Adds two numbers together and returns the Sum.
@@ -18,11 +18,11 @@ def add_integer(a, b=98):
     Returns:
         int: Sum of two floats or ints
     """
-    #Conditionals for the function to make sure 
-    #all inputs are ints/float
+    # Conditionals for the function to make sure 
+    # all inputs are ints/float
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
     if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
-    #If the function passes then it should return the sum
+    # If the function passes then it should return the sum
     return (int(a + b))
