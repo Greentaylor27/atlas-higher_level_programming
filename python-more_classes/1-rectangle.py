@@ -40,6 +40,7 @@ class Rectangle:
         
         @height.setter
         def height(self, value):
+            """Height setter"""
             if not isinstance(height, int):
                 raise TypeError("height must be an integer")
             if height < 0:
