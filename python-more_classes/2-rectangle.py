@@ -50,7 +50,7 @@ class Rectangle:
     def area(self):
         """Method to find the area"""
         return (self.__height * self.__width)
-    
+
     def perimeter(self):
         """Method for finding the perimeter"""
         pmeter = 2 * (self.__height + self.__width)
