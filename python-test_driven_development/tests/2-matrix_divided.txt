@@ -15,6 +15,18 @@ Regular test
 
 Incorrect uses
 
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+
+>>> matrix_divided(matrix, "World")
+Traceback (most recent call last):
+    ...
+
+
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+    ...
+ZeroDivisonError: divison by zero
+
 >>> matrix = [[1, 2], [4, 5, 6]]
 
 >>> matrix_divided(matrix, 2)
