@@ -19,13 +19,13 @@ def matrix_divided(matrix, div):
         ZeroDivisonError: divison by zero
 
     Returns:
-        list: A matrix with new elements 
+        list: A matrix with new elements
     """
     # Conditionals for error raising
     result = []
     shortcut = "matrix must be a matrix (list of lists) of integers/floats"
     if not isinstance(matrix, list):
-            raise TypeError(shortcut)
+        raise TypeError(shortcut)
     else:
         for row in matrix:
             if not all(isinstance(element, (int, float)) for element in row):
