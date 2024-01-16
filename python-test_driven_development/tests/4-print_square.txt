@@ -9,7 +9,7 @@ Proper usage:
 
 Improper usage:
 
->>> print_square(H)
+>>> print_square("Hello")
 Traceback (most recent call last)
     ...
 TypeError: size must be an integer
