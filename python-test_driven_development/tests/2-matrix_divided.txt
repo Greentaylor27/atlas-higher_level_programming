@@ -16,6 +16,15 @@ Regular test
 Incorrect uses
 
 >>> matrix = [[1, 2], [4, 5, 6]]
+
+>>> matrix_divided(matrix, 2)
 Traceback (most recent call last):
     ...
-TypeError:
+TypeError: Each row of the matrix must be the same size
+
+>>> matrix = [[1, "2"], [3, 4]]
+
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a list of matrix
