@@ -70,5 +70,4 @@ class Rectangle:
                 
     def __str__(self):
         """String representation of a rectangle"""
-        self.my_print()
-        return ""
+        return self.my_print()
