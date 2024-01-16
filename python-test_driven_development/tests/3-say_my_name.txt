@@ -9,7 +9,7 @@ My name is Taylor Green
 My name is John Doe
 
 >>> say_my_name("Bill")
-My name is Bill
+My name is Bill 
 
 Improper usage:
 
