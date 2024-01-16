@@ -1,0 +1,24 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Proper usage:
+
+>>> say_my_name("Taylor", "Green")
+My name is Taylor Green
+
+>>> say_my_name("John", "Doe")
+My name is John Doe
+
+>>> say_my_name("Bill")
+My name is Bill
+
+Improper usage:
+
+>>> say_my_name("John", 4)
+Traceback (most recent call last):
+    ...
+TypeError: last_name must be a string
+
+>>> say_my_name(3, "Doe")
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
