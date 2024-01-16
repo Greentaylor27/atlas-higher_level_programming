@@ -2,18 +2,32 @@
 """
 Function that prints a literal square
 """
+
+
 def print_square(size):
-    def __init__(self, size=0):
-        self.size = size
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise TypeError("Size must be >= 0")
-        if isinstance(size, float) and size < 0:
-            raise TypeError("size must be an integer")
-        if size == 0:
+    """_summary_
+
+    Args:
+        size (int): intended integer for how big you want the square
+
+    Raises:
+        TypeError: size must be an integer
+        TypeError: size must be >=0
+        TypeError: size must be an integer
+    """
+    # Conditionals for function
+    if not isinstance(size, int):
+        raise TypeError("size must be an integer")
+    if size < 0:
+        raise TypeError("size must be >= 0")
+    if isinstance(size, float) and size < 0:
+        raise TypeError("size must be an integer")
+    
+    # Meat and potatoes of the code
+    if size == 0:
+        print("")
+    else:
+        for x in range(size):
+            for y in range(size):
+                print("#", end="")
             print("")
-        else:
-            for x in range(size):
-                for y in range(size):
-                    print("#", end="")
