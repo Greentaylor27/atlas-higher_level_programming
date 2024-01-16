@@ -25,7 +25,7 @@ def print_square(size):
     
     # Meat and potatoes of the code
     if size == 0:
-        print("")
+        pass
     else:
         for x in range(size):
             for y in range(size):
