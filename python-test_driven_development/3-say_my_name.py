@@ -23,4 +23,4 @@ def say_my_name(first_name, last_name=""):
         raise TypeError("last_name must be a string")
     # String cat and print
     full_name = first_name + " " + last_name
-    print(full_name)
+    print("My name is {}".format(full_name))
