@@ -23,12 +23,13 @@ def matrix_divided(matrix, div):
     """
     # Conditionals for error raising
     result = []
+    shortcut = "matrix must be a matrix (list of lists) of integers/floats"
     if not isinstance(matrix, list):
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            raise TypeError(shortcut)
     else:
         for row in matrix:
             if not all(isinstance(element, (int, float)) for element in row):
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError(shortcut)
     if div == 0:
         raise ZeroDivisionError("division by zero")
     if not isinstance(div, (float, int)):
