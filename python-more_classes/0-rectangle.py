@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Class creation for rectangle"""
 class Rectangle:
-    def __init__(self):
-        pass
+    """
+    Class for rectangle
+    """
+    pass
