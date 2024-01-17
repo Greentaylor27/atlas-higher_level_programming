@@ -58,17 +58,12 @@ class Rectangle:
             pmeter = 0
         return pmeter
 
-    def my_print(self):
+    def __str__(self):
         """Method to print a literal rectangle"""
         if self.__height == 0 or self.__width == 0:
             print("")
         else:
             for x in range(self.__height):
                 for y in range(self.__width):
-                    print("#", end="")
+                    self.my_print("#", end="")
                 print("")
-                
-    def __str__(self):
-        """String representation of a rectangle"""
-        self.my_print()
-        return ""
