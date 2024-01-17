@@ -7,7 +7,7 @@ class Rectangle:
     Attributes for Rectangle
     """
     number_of_instances = 0
-    symbol = "#"
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         if not isinstance(width, int):
@@ -23,7 +23,6 @@ class Rectangle:
         self.__height = height
         #Increment the class attribute when a new instance is created
         self.number_of_instances += 1
-        self.print_symbol = "#"
 
     @property
     def width(self):
