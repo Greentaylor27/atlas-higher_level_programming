@@ -7,7 +7,7 @@ class Rectangle:
     Attributes for Rectangle
     """
     number_of_instances = 0
-    print_symbol = "#"
+    symbol = "#"
 
     def __init__(self, width=0, height=0):
         if not isinstance(width, int):
@@ -22,7 +22,8 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = height
         #Increment the class attribute when a new instance is created
-        Rectangle.number_of_instances += 1
+        self.number_of_instances += 1
+        self.print_symbol = "#"
 
     @property
     def width(self):
@@ -52,6 +53,16 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
+    @property
+    def symbol(self):
+        """Getter for symbol"""
+        return self.symbol
+
+    @symbol.setter
+    def symbol(self, value):
+        """Setter for symbol"""
+        self.symbol = value
+
     def area(self):
         """Method to find the area"""
         return (self.__height * self.__width)
@@ -67,7 +78,7 @@ class Rectangle:
 
         pcs = []
         for _ in range(self.__height):
-            row = Rectangle.print_symbol * self.__width
+            row = self.print_symbol * self.__width
             pcs.append(row)
         pcs = "\n".join(pcs)
 
@@ -85,4 +96,4 @@ class Rectangle:
         """Prints a message when the rectangle is being destroyed."""
         print("Bye rectangle...")
         # Decrement the class attribute when an instance is deleted
-        Rectangle.number_of_instances -= 1
+        self.number_of_instances -= 1
