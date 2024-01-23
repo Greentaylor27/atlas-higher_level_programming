@@ -3,7 +3,7 @@
 
 
 def inherits_from(obj, a_class):
-    """Checks if obj has been 
+    """Checks if obj has been
 
     Args:
         obj (object): obj to check
