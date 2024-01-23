@@ -15,4 +15,4 @@ A list of strings
 >>> my_list.append("Glad you could")
 >>> my_list.append("Make it")
 >>> my_list.print_sorted()
-["Glad you could", "Hello", "Make it", Student]
+['Glad you could', 'Hello', 'Make it', 'Student']
