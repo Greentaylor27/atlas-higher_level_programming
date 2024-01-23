@@ -16,3 +16,15 @@ A list of strings
 >>> my_list.append("Make it")
 >>> my_list.print_sorted()
 ['Glad you could', 'Hello', 'Make it', 'Student']
+
+A list of nothing
+>>> my_list = MyList(None)
+>>> my_list.print_sorted()
+[]
+
+An empty list
+>>> my_list = MyList()
+>>> my_list.append()
+>>> my_list.append()
+>>> my_list.append()
+[]
