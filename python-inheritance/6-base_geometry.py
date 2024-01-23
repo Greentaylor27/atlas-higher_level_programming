@@ -9,5 +9,5 @@ class BaseGeometry:
     def area(self):
         try:
             pass
-        except:
+        except NotImplementedError:
             raise Exception("area() if not implemented")
