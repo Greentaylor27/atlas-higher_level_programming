@@ -18,4 +18,3 @@ def write_file(filename="", text=""):
     x = filename
     with open(x, "w") as file:
         return file.write(text)
-        
