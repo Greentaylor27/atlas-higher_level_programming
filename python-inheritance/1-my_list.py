@@ -2,7 +2,7 @@
 """Class known as MyList"""
 
 
-class MyList:
+class MyList(list):
     """Child class for what I assume is list"""
 
 
