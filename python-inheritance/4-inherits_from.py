@@ -2,7 +2,7 @@
 """Function that checks if a class is inherited from an object"""
 
 
-def inhreits_from(obj, a_class):
+def inherits_from(obj, a_class):
     """Checks if obj has been 
 
     Args:
