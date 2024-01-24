@@ -14,4 +14,5 @@ def save_to_json_file(my_obj, filename):
         filename (string): File to be converted
     """
     with open(filename, mode="r") as x:
+        y = json.loads(x)
         return x.write(my_obj)
