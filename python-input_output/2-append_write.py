@@ -12,6 +12,6 @@ def append_write(filename="", text=""):
         filename (str, optional): File you want to append. Defaults to "".
         text (str, optional): text you want to add. Defaults to "".
     """
-    x = filename
-    with open(x, "a") as file:
-        return file.append(text)
+
+    with open(filename, mode="a") as x:
+        return x.write(text)
