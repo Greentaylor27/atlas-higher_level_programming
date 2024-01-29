@@ -12,16 +12,26 @@ class Rectangle(Base):
 
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
-        if width < 0:
-            raise ValueError("width must be >= 0")
+        if width <= 0:
+            raise ValueError("width must be > 0")
         self.__width = width
 
         if not isinstance(height, int):
             raise TypeError("height must be an integer")
-        if height < 0:
-            raise ValueError("height must be >= 0")
+        if height <= 0:
+            raise ValueError("height must be > 0")
         self.__height = height
+
+        if not isinstance(x, int):
+            raise TypeError("x must be an integer")
+        if x <= 0:
+            raise ValueError("x must be > 0")
         self.__x = x
+
+        if not isinstance(y, int):
+            raise TypeError("y must be an integer")
+        if y <= 0:
+            raise ValueError("y must be > 0")
         self.__y = y
 
     """Getter and setters for attributes"""
@@ -36,7 +46,7 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("width must be > 0")
         self.__width = value
 
     @property
@@ -50,7 +60,7 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("height must be >= 0")
+            raise ValueError("height must be > 0")
         self.__height = value
 
     @property
@@ -61,6 +71,10 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """Setter for x"""
+        if not isinstance(value, int):
+            raise TypeError("x must be an integer")
+        if value <= 0:
+            raise ValueError("x must be > 0")
         self.__x = value
 
     @property
@@ -71,4 +85,8 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """Setter for y"""
+        if not isinstance(value, int):
+            raise TypeError("y must be an integer")
+        if value <= 0:
+            raise ValueError("y must be < 0")
         self.__y = value
