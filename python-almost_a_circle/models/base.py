@@ -14,4 +14,5 @@ class Base:
         if not isinstance(id, None):
             self.id = id
         else:
-            id = __nb_objects =+ 1
+            Base.__nb_objects =+ 1
+            self.id = Base.__nb_objects
