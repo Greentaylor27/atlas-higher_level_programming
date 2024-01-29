@@ -104,10 +104,10 @@ class Rectangle(Base):
         """
         Prints # in a rectangle
         """
-        for x in range(self.__height):
-            for y in range(self.__width):
-                print("#", end="")
+        for x in range(self.__y):
             print()
+        for y in range(self.__width):
+            print(" " * self.__x + "#" * self.__height)
 
     def __str__(self):
         i = self.id
