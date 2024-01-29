@@ -25,13 +25,13 @@ class Rectangle(Base):
         if not isinstance(x, int):
             raise TypeError("x must be an integer")
         if x < 0:
-            raise ValueError("x must be > 0")
+            raise ValueError("x must be >= 0")
         self.__x = x
 
         if not isinstance(y, int):
             raise TypeError("y must be an integer")
         if y < 0:
-            raise ValueError("y must be > 0")
+            raise ValueError("y must be >= 0")
         self.__y = y
 
     """Getter and setters for attributes"""
@@ -74,7 +74,7 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if value < 0:
-            raise ValueError("x must be > 0")
+            raise ValueError("x must be >= 0")
         self.__x = value
 
     @property
@@ -88,5 +88,5 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         if value < 0:
-            raise ValueError("y must be > 0")
+            raise ValueError("y must be >= 0")
         self.__y = value
