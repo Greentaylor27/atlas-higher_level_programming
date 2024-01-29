@@ -13,7 +13,7 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-
+    """Getter and setters for attributes"""
     #Getter and setter for width
     def get_width(self):
         return self.__width
