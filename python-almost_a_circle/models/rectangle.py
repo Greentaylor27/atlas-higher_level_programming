@@ -117,7 +117,7 @@ class Rectangle(Base):
         w = self.__width
         print("[Rectangle] ({}) {}/{} - {}/{}".format(i, x, y, w, h))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         Defines which arg goes to which attribute
         """
@@ -133,3 +133,6 @@ class Rectangle(Base):
             self.__x = args[3]
         if arg_len >= 5:
             self.__y = args[4]
+
+        for key, value in kwargs.items():
+            setattr(self, key, value)
