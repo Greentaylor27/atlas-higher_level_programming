@@ -22,6 +22,7 @@ class Base:
         """
         Method that returns the JSON representation of list_dictionaries
         """
+        @staticmethod
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         else:
