@@ -133,4 +133,3 @@ class Rectangle(Base):
             self.__x = args[3]
         if arg_len >= 5:
             self.__y = args[4]
-
