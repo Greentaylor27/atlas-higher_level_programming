@@ -45,6 +45,6 @@ class Base:
     def from_json_string(json_string):
         json_s = json_string
         if json_s is None or len(json_s) == 0:
-            json_s = []
+            return (json_s = [])
         else:
             return json.loads(json_s)
