@@ -120,12 +120,7 @@ class Rectangle(Base):
     def update(self, *args):
         """
         Defines which arg goes to which attribute
-
-        Raises:
-            ValueError: Need 5 arguments
         """
-        if len(args) != 5:
-            raise ValueError("Need 5 arguments")
 
         self.id = args[1]
         self.__width = args[2]
