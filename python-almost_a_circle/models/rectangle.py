@@ -116,3 +116,19 @@ class Rectangle(Base):
         h = self.__height
         w = self.__width
         print("[Rectangle] ({}) {}/{} - {}/{}".format(i, x, y, w, h))
+
+    def update(self, *args):
+        """
+        Defines which arg goes to which attribute
+
+        Raises:
+            ValueError: Need 5 arguments
+        """
+        if len(args) != 5:
+            raise ValueError("Need 5 arguments")
+
+        self.id = args[1]
+        self.__width = args[2]
+        self.__height = args[3]
+        self.__x = args[4]
+        self.__y = args[5]
