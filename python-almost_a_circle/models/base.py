@@ -43,6 +43,9 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """
+        Method that loads a JSON string representation of an obj
+        """
         json_s = json_string
         if json_s is None or len(json_s) == 0:
             return []
