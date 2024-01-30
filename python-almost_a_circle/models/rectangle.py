@@ -121,12 +121,10 @@ class Rectangle(Base):
         """
         Defines which arg goes to which attribute
         """
+        i = self.id
+        w = self.__width
+        h = self.__height
+        x = self.__x
+        y = self.__y
 
-        if len(args) != 6:
-            raise ValueError("Expecting 6 arguments")
-
-        self.id = args[0]
-        self.__width = args[1]
-        self.__height = args[2]
-        self.__x = args[3]
-        self.__y = args[4]
+        i, w, h, x, y, = args
