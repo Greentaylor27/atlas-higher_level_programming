@@ -122,8 +122,8 @@ class Rectangle(Base):
         Defines which arg goes to which attribute
         """
 
-        self.id = args[1]
-        self.__width = args[2]
-        self.__height = args[3]
-        self.__x = args[4]
-        self.__y = args[5]
+        args[1] = self.id
+        args[2] = self.__width
+        args[3] = self.__height
+        args[4] = self.__x
+        args[5] = self.__y
