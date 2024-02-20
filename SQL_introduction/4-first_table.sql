@@ -1,5 +1,5 @@
 -- Creates a new table in current database
-IF EXISTS first_table
+IF NOT EXISTS first_table
 BEGIN
     CREATE TABLES first_table(
         id int
@@ -7,4 +7,5 @@ BEGIN
     )
 END
 ELSE
-PRINT 'TABLE EXISTS'
+    PRINT 'TABLE EXISTS'
+END
