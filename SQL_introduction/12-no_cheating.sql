@@ -1,2 +1,2 @@
 -- Changing the record for Bob
-UPDATE score SET name = "Bob" WHERE score = 10
+UPDATE second_table SET name = "Bob" WHERE score = 10
