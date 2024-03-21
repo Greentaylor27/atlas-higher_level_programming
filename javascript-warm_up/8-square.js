@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 let x = process.argv[2];
-const myString = 'x'
+const myString = 'X'
 
 if (!isNaN(x)) {
   x = parseInt(x);
