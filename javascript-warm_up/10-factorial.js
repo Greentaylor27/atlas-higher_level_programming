@@ -9,6 +9,9 @@ function factorial (a) {
   if (a === 0) {
     return 1;
   }
+  if (isNaN(a)) {
+    return '';
+  }
   return (a * factorial(a - 1));
 }
 
