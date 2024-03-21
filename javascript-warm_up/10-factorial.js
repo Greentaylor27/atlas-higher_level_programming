@@ -10,7 +10,7 @@ function factorial (a) {
     return 1;
   }
   if (isNaN(a)) {
-    return '';
+    return 1;
   }
   return (a * factorial(a - 1));
 }
