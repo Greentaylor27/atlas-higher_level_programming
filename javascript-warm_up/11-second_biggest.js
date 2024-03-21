@@ -1,10 +1,14 @@
 #!/usr/bin/node
 
-const Arr = process.argv.slice(2);
+const Arr = Number(process.argv.slice(2));
 
 function FindSecondLargest (a) {
   if (a.length < 2) {
     return 0;
+  }
+
+  if (isNaN(a)) {
+    return 0
   }
 
   let largest = a[0];
