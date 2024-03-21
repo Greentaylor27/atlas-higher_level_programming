@@ -4,7 +4,7 @@ let x = process.argv[2];
 const myString = 'C is fun';
 
 if (!isNaN(x)) {
-  x = parseInt(x);
+  x = parseInt(x - 1);
 } else {
   console.log('Missing number of occurrences');
 }
