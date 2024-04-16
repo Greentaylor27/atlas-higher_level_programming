@@ -11,7 +11,7 @@ if (arg.length < 4) {
 const fileName = arg[2];
 const data = arg[3];
 
-fs.writeFile(filename, data, (err) => {
+fs.writeFile(fileName, data, (err) => {
   if (err) {
     console.log(err)
   }
