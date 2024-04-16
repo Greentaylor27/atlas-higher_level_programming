@@ -1,6 +1,6 @@
 #!/usr/bin/node
-const fs = require('request');
-const process = require('process');
+const fs = require(`request`);
+const process = require(`process`);
 const arg = process.argv;
 
 if (arg[2]) {
